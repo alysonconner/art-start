@@ -1,0 +1,131 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+  margin: 0;
+  font-size: 30px;
+  display: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff;
+}
+
+.padding {
+  padding: 0px 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.the-header {
+  background: #131328;
+}
+.the-header .logo {
+  display: inline-block;
+  color: white;
+  float: left;
+  padding: 0 10px;
+  margin: 15px;
+}
+
+.logo img {
+  width: 60px;
+}
+.the-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.donate {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+}
+
+.donate p {
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.donate p:hover {
+  border: none;
+  background: #cc3432;
+  border: 1px solid #cc3432;
+
+}
+
+a.resToggle {
+  display: none;
+}
+
+.the-nav {
+  padding-top: 10px;
+  display: inline-block;
+  float: right;
+}
+.the-nav li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.the-nav li a {
+  display: block;
+  padding: 30px 15px;
+}
+.the-nav li:hover a {
+  background: #131328;
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    display: block;
+  }
+  a.resToggle {
+    display: inline-block;
+    float: right;
+    padding: 35px;
+  }
+  a.resToggle:hover {
+    background: #131328;
+    color: red;
+  }
+
+  .the-nav {
+    display: none;
+    width: 100%;
+  }
+  .the-nav.active {
+    display: block;
+  }
+  .the-nav li {
+    display: block;
+    border-bottom: 1px dotted #fff;
+  }
+
+  .the-nav li:last-child {
+    border-bottom: none;
+  }
+
+  .the-nav li a {
+    padding: 15px 15px;
+  }
+}
+.align-center {
+  text-align: center;
+}

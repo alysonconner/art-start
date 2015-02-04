@@ -9,18 +9,20 @@
 }
 
 body {
+  background-color: ;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h3 {
+  font-family: 'Bitter', serif;
   margin: 0;
-  font-size: 30px;
+  font-size: 40px;
   display: none;
-  color: #fff;
+  color: #cc3432;
   text-transform: uppercase;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #fff;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 2px solid #131328;
 }
 
 .padding {
@@ -37,7 +39,6 @@ ul {
 }
 .the-header .logo {
   display: inline-block;
-  color: white;
   float: left;
   padding: 0 10px;
   margin: 15px;
@@ -75,6 +76,7 @@ a.resToggle {
 }
 
 .the-nav {
+  background: #fff;
   padding-top: 10px;
   display: inline-block;
   float: right;
@@ -84,12 +86,26 @@ a.resToggle {
   text-transform: uppercase;
 }
 .the-nav li a {
+  font-family: 'Bitter', serif;
+  font-size: 30px;
   display: block;
+  color: #131328;
   padding: 30px 15px;
 }
 .the-nav li:hover a {
+  color: #cc3432;
+}
+
+footer {
   background: #131328;
-  color: red;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  padding: 10px;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -102,8 +118,7 @@ a.resToggle {
     padding: 35px;
   }
   a.resToggle:hover {
-    background: #131328;
-    color: red;
+    color: #cc3432;
   }
 
   .the-nav {
@@ -115,11 +130,10 @@ a.resToggle {
   }
   .the-nav li {
     display: block;
-    border-bottom: 1px dotted #fff;
+    border-bottom: 1px dotted #131328;
   }
 
   .the-nav li:last-child {
-    border-bottom: none;
   }
 
   .the-nav li a {
@@ -128,4 +142,14 @@ a.resToggle {
 }
 .align-center {
   text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  .the-nav {
+    background: #131328;
+  }
+  .the-nav li a {
+    color: #fff;
+    font-size: 20px;
+  }
 }

@@ -1,3 +1,4 @@
 $('.resToggle').click(function(){
-  $('.the-nav').toggleClass('active');
+  $('.the-nav').toggleClass('active' , 1000 );
 });
+
